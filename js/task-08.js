@@ -9,13 +9,13 @@ function handleSubmit(event) {
   } = event.currentTarget;
 
   if (email.value === "" || password.value === "") {
-    return console.log("Allert, pls write something!");
+    return alert("Allert, pls write something!");
   }
 
     formData.email = email.value;
   formData.password = password.value;
 
-  console.log(formData);
+  console.alert(formData);
     
   event.currentTarget.reset();
 }
